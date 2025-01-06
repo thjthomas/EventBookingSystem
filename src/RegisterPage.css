@@ -1,0 +1,151 @@
+.register-page-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .registration-header {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .register-content {
+    display: flex;
+    gap: 6rem;
+    position: relative;
+    padding: 0 2rem;
+  }
+  
+  /* Add vertical divider line */
+  .register-content::before {
+    content: '';
+    position: absolute;
+    left: 55%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+  }
+  
+  .register-form-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .event-summary-column {
+    flex: 0 0 35%;
+    max-width: 35%;
+    position: sticky;
+    top: 2rem;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Prevent overflow */
+    width: 100%;     /* Ensures consistent width */
+  }
+  
+  .register-form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+  }
+  
+  .register-form input,
+  .register-form select {
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 400px; /* Full width to fill the column */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+  
+  .event-image-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-fee {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkout-button {
+    background-color: #ff6a1b;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .checkout-button:hover {
+    background-color: #e25914;
+  }
+
+  .back-button {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #bbb;
+  }
+
+  .error-text {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: -0.2rem;  /* Slight negative margin to reduce spacing */
+    margin-bottom: 0.8rem;
+    min-height: 1rem;     /* Reserve enough space for error text */
+    display: block;       /* Ensure it stays in its own line */
+  }
+  
+  @media (max-width: 768px) {
+    .register-content {
+      gap: 2rem;
+    }
+    
+    .register-content::before {
+      display: none;
+    }
+  
+    .register-form-column,
+    .event-summary-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .event-summary-column {
+      position: static;
+    }
+  }

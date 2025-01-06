@@ -1,0 +1,54 @@
+/* Global Reset and Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: #fff9f3;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.vilor-logo {
+  height: 40px;
+  /* Adjust or remove margin based on design */
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

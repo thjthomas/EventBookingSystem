@@ -1,0 +1,24 @@
+.image-slider-container {
+    max-width: 1200px; /* match your layout width if desired */
+    margin: 1rem auto;
+  }
+  
+  .slider-image {
+    width: 100%;        /* Make it scale to slider width */
+    max-height: 400px; /* Adjust to desired maximum height */
+    object-fit: cover;  /* Crop if the image exceeds aspect ratio */
+    display: block;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect: change color (or any property you like) */
+  .slick-prev:hover:before,
+  .slick-next:hover:before {
+    color: #888; /* Slightly lighter/darker shade */
+  }
