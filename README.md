@@ -8,7 +8,7 @@ npm
 
 ## Installation
 
-Run this command in command prompt
+Run this command in command prompt:
 `git clone https://github.com/thjthomas/EventBookingSystem.git`
 
 ### Running the Backend Server
