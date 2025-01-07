@@ -1,6 +1,6 @@
 {
   "name": "eventbookingsystem",
-  "homepage": "https://github.com/thjthomas/EventBookingSystem",
+  "homepage": "https://thjthomas.github.io/EventBookingSystem",
   "version": "0.1.0",
   "proxy": "http://localhost:3001",
   "private": true,
